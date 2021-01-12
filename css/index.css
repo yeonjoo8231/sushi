@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a {text-decoration: none; color: inherit;}
+table {width: 100%; border-collapse: collapse;}
+ul {list-style-type: none;}
+img {max-width: 100%; vertical-align: middle;}
+button {border: none; background: none; cursor: pointer; font-size: 100%;}
+
+.row {max-width: 960px; margin: 0 auto;} 
+
+body {font-size: 16px; font-family: '나눔고딕';
+    line-height: 1.5; color: #666;}
+#nav
+    {background: #85665c;
+    position: fixed;
+    width: 100%;
+    left: 0px; top: 0px;
+    z-index: 99;}
+#nav .depth1
+    {overflow: hidden;}
+#nav .depth1 li
+    {float: left; width: 20%;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    color: #fff;}
+#nav .depth1 li a
+    {display: inline-block;
+    padding: 20px 0px;}
+#nav .depth1 li:hover
+    {border-bottom: 2px solid #fff;}
+
+
+#header
+    {background: url(../images/header_bg.gif) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    margin-top: 66px;}
+.header_text
+    {position: absolute;
+    top: 40%;   left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;}
+.header_text h1 p 
+    {font-size: 48px;
+    font-family: '나눔명조';
+    padding-top: 20px;}
+.header_text > p {font-size: 22.4px;}
+
+/* #section 구역 */
+#section
+    {background: url(../images/bg.jpg) repeat;
+    position: relative;}
+#section > div
+    {padding: 48px 0px;}
+#section h2
+    {font-size: 48px;
+    font-family: '나눔명조';
+    color: #85665c;
+    text-align: center;
+    padding-bottom: 20px;}
+
+#section > .article6 
+    {padding: 0px;}
+.article1 { }
+.main_food 
+    {text-align: center; 
+    margin-top: -188px;}
+.article1 ul
+    {display: table;
+    width: 100%;
+    color: #666;
+    text-align: center;
+    margin-top: 50px;}
+.article1 ul > li
+    {display: table-cell;
+    width: 25%;
+    padding: 0px 15px;}
+.article1 h3
+    {font-size: 25.6px;
+    font-family: '나눔명조';
+    color: #85665c;
+    padding: 40px 0px 15px;}
+.article1 ul > li img
+    {height: 97px;}
+
+.article2 
+    {text-align: center;}
+.article2 ul    
+    {width: 100%;
+    /* background: chartreuse; */
+    overflow: hidden;}
+.article2 ul li
+    {float: left; width:25%;
+    padding: 30px 10px;
+    border: 0px solid red;}
+
+.article3
+    {text-align: center;}
+.article3 .chef
+    {padding-top: 50px;}
+.article3 strong   
+    {display: block;
+    font-size: 28.8px;
+    font-family: '나눔명조';
+    color: #404040;
+    font-weight: normal;
+    padding: 20px 0px;}
+    /* 폰트명이 한글이거나, 영문 두 단어 이상일때는 따옴표로 감싸주세요 */
+.article3 > .chef > p
+    {color: #85665c;}
+
+.article4 table
+    {margin-top: 20px;}
+.article4 td
+    {border-bottom: 1px solid #85665c;
+    padding: 15px 0px;
+    color: #404040;}
+.article4 td:nth-child(1) strong
+    {font-size: 25.6px;
+    color: #85665c;
+    font-weight: normal;}
+.article4 td:nth-child(2)
+    {text-align: right;
+    font-size: 22.4px;}
+.article4 tr:last-child td
+    {border-bottom: none;}
+.article4 .btn
+    {text-align: center;
+    margin-top: 50px;}
+/* .article4 .btn button
+    {width: 175.2px;
+    height: 64px;
+    border-radius: 50px;
+    background: #85665c;
+    color: #fff;} */
+.article4 .btn a
+    {display: inline-block;
+    line-height: 64px;
+    width: 175.2px;
+    height: 64px;
+    border-radius: 50px;
+    background: #85665c;
+    color: #fff;}
+
+#detail 
+    {position: fixed;
+    /* top: 0; left: 0; bottom: 0; right: 0; */
+    width: 100%; height: 100%; top: 0;  left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;}
+#detail:target
+    {display: block;}
+.detailcont
+    {position: absolute; width: 400px;
+    padding: 20px;
+    background: #fff; color: #000;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);}
+.detailcont .close
+    {display: block;
+    width: 80px; background: #85665c;
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto 0px;}
+.article5
+    {overflow: hidden;}
+.article5 .info
+    {float: left;
+    width: 50%;
+    margin-top: 20px;}
+.article5 .info pre
+    {font-family: inherit;}
+.article5 .map
+    {float: right;
+    width: 50%;
+    margin-top: 20px} 
+    
+.article6
+    {background: #85665c;
+    color: #f4ba8e;
+    font-family: '나눔명조';
+    font-size: 32px;
+    text-align: center;}
+.article6 div
+    {padding: 45px 0px;}
+.article6 a
+    {color: #fff;
+    padding-left: 20px;}
+.article6 img  
+    {width: 100%;}
+
+#footer
+    {background:  #85665c;
+    color: #fff;
+    font-family: '나눔명조';
+    text-align: center;
+    padding: 61px 0px;}
+
+.gotop
+    {position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;}
+
+
+/* .article3 > div
+    {padding: 50px 0px;}
+.article3 h3
+    {font-size: 28.8px;
+    font-family: '나눔명조';
+    color: #404040;
+    padding: 20px 0px;}
+.article3 p
+    {color: #85665c;}
+
+.article4 table 
+    {margin: 30px 0px 60px;}
+.article4 table td > strong
+    {font-size: 25.6px;
+    color: #85665c;
+    font-weight: normal;}
+.article4 table td
+    {color: #404040;
+    padding: 15px 0px;}
+.article4 table tr+tr
+    {border-top: 1px solid #aaa;}
+.article4 table tr>td+td
+    {text-align: right;
+    font-weight: bold;}
+.button
+    {text-align: center;
+    line-height: 64px;}
+.button>a
+    {color: #fff;
+    background: #85665c;
+    border-radius: 50px;
+    width: 175.2px;
+    height: 64px;
+    display: inline-block;} */
